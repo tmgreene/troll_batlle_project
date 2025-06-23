@@ -1,0 +1,55 @@
+/* JavaScript Battle Game stylesheet 
+
+font-family: "Nosifer", sans-serif; (Main heading)
+font-family: "Jolly Lodger", system-ui; (button)
+font-family: "Freckle Face", system-ui; (losing)
+font-family: "Chewy", system-ui; (winning)
+*/
+
+body {
+	text-align: center;
+	background-color: rgb(11, 12, 16);
+	background-image: url("forest.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: "Nosifer", sans-serif;
+	color: lightyellow;
+	font-size: 4em;  /*4 times paragraph size*/
+	text-shadow: darkorange 2px 4px 2px, black 3px 5px 1px;
+	margin-top: 7%;
+}
+
+div#button {
+	background-color: darkorange;  /*div is block ele*/
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Jolly Lodger", system-ui;
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 1s; /*fade in psuedo class style for 1s then fade out*/
+}
+
+div#button:hover {    /*style the button interaction pseudo class*/
+	background-color: black;
+	color: darkorange;
+}
+
+h2#victory {
+	font-family: "Chewy", system-ui; 
+	color: palegreen;
+	font-size: 3em;
+	text-shadow: black 3px 3px 1px; /* 1 = blur*/
+}
+
+h2#defeat {
+	font-family: "Freckle Face", system-ui; 
+	color: red;
+	font-size: 3em;
+	text-shadow: black 3px 3px 1px;
+}
